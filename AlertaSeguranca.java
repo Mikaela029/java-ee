@@ -31,8 +31,7 @@ public class AlertaSeguranca {
             }
 
         }
-        System.out.println("CENSO: Detetados " + contaAlive + " personagens VIVOS e " + contaDead
-                + " personagens MORTOS nos primeiros 20 registos."); // o + aqui funciona como colar texto, adiciona
+        System.out.println("CENSO: Detetados " + contaAlive + " personagens VIVOS e " + contaDead + " personagens MORTOS nos primeiros 20 registos."); // o + aqui funciona como colar texto, adiciona
                                                                      // informaçao a frente
     }
 
