@@ -1,36 +1,29 @@
 package com.example;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.IOException;
 
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
-public class App 
-{
-    public static void main( String[] args )
-
-    {
-        String jsonString = "{\"id\":\"1\", \"nome\":\"Mikaela\"}";
-
-        ObjectMapper mapper = new ObjectMapper();
-        //o codigo "perigoso" vem para dentro das chavetas
-        try {
-            JsonNode jsonNode = mapper.readTree(jsonString);
-            int id = jsonNode.get("id").asInt();
-            String nome = jsonNode.get("nome").asText();
-            //classe colocamos a começar como mauscula, objetos comecam com minuscula
-            
-        }
-        catch(JsonMappingException pe) {
-                System.out.println("Erro a mapear a String Json");
-        }
-        catch(JsonProcessingException me) {
-            System.out.println("Erro a ler a String Json");
-        }
-        //se correr bem no try, o codigo continua a ler, senão usamos o catch para resolver/ aparecer a mensagem
+@WebServlet("/") //o Tomee, o servidor, vai encontrar o caminho para o servidor
+public class App extends HttpServlet {
+    
+    @Override // duas funcionalidades, é informativo, e ajuda a nao cometer erros.  
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+     //usamos o protected para subscrever o metodo (ter o mesmo metodo com outro comportamento) do get que existe na classe do httpServlet
+    //faz um get, e recebe 2 parametros, o req e o resp
+    //sempre que quisermos conusltar alguma coisa do pedidio usamos a variavel req (request)
+    //sempre que quisermos responder, usamos a resp (response)
+        resp.getWriter().println("Servlet Online");
         
+        }
 
-        System.out.println( "Hello World!" );
-    }
-}
+    } 
+   
+
+
+    
+
