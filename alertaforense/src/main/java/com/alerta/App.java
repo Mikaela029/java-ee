@@ -16,14 +16,18 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.ws.rs.ApplicationPath;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.core.Context;
 
 //4)Se o vosso programa detetar um alien morto, deve iniciar uma investigação após o alerta para descobrir onde ele foi visto pela última vez.Isolem o URL do episódio e façam o Java disparar um segundo pedido HTTP para o URL do episódio que acabaram de descobrir. Extraiam o nome desse episódio e mostrem o veredicto no ecrã com este formato: [ALERTA FORENSE] O último registo do alien morto foi no episódio: '...'.
 //5) A - Servlet do Censo. Criar uma servlet que disponibiliza o relatório através do caminho “/census” (contagem de vivos/mortos, alerta de alien morto e análise forense do episódio relativo ao perigo biológico). Devolver o relatório em HTML em vez de escrever na consola. Permitir que o pedido ao servlet defina o intervalo de personagens que devem ser analisados. (?offset=x&limit=y, x=1 e y=20 por defeito). Permitir que o pedido defina se o alerta de ameaça biológica alienígena deve ou não ser gerado. (?showAlerts=true/false, true por defeito)
 
-@WebServlet("/census")
-public class App extends HttpServlet {
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException { // tem haver co a forma como o Java funciona. Esta função faz parte HttpServlet funciona, é que nos permite fazer o override no original
+//@jakarta.ws.rs.Path ("/census")
+public class App {
+    
+    @GET
+    public void doGet(@Context HttpServletRequest req, @Context HttpServletResponse resp) throws ServletException, IOException { // tem haver co a forma como o Java funciona. Esta função faz parte HttpServlet funciona, é que nos permite fazer o override no original
         
         try {
             int limit = Integer.parseInt(req.getParameter("limit"));

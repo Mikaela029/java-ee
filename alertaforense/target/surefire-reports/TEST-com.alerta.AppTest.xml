@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.alerta.AppTest" time="0.034" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.alerta.AppTest" time="0.029" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\mikae\jmd-java\java-ee\alertaforense\target\test-classes;C:\Users\mikae\jmd-java\java-ee\alertaforense\target\classes;C:\Users\mikae\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\mikae\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.5\jackson-databind-2.21.5.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.5\jackson-core-2.21.5.jar;C:\Users\mikae\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0\jakarta.servlet-api-6.1.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\mikae\jmd-java\java-ee\alertaforense\target\test-classes;C:\Users\mikae\jmd-java\java-ee\alertaforense\target\classes;C:\Users\mikae\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\mikae\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.5\jackson-databind-2.21.5.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.5\jackson-core-2.21.5.jar;C:\Users\mikae\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0\jakarta.servlet-api-6.1.0.jar;C:\Users\mikae\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar;"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PT"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.11.10-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\mikae\AppData\Local\Temp\surefire8993646328318218848\surefirebooter17273125612639992934.jar C:\Users\mikae\AppData\Local\Temp\surefire8993646328318218848 2026-07-29T14-37-30_244-jvmRun1 surefire10503282478698657108tmp surefire_04045715570431782404tmp"/>
+    <property name="sun.java.command" value="C:\Users\mikae\AppData\Local\Temp\surefire17921286693849267854\surefirebooter4286525728676622889.jar C:\Users\mikae\AppData\Local\Temp\surefire17921286693849267854 2026-07-31T14-01-46_286-jvmRun1 surefire10872471134016989995tmp surefire_08274502348405499060tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\mikae\jmd-java\java-ee\alertaforense\target\test-classes;C:\Users\mikae\jmd-java\java-ee\alertaforense\target\classes;C:\Users\mikae\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\mikae\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.5\jackson-databind-2.21.5.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.5\jackson-core-2.21.5.jar;C:\Users\mikae\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0\jakarta.servlet-api-6.1.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\mikae\jmd-java\java-ee\alertaforense\target\test-classes;C:\Users\mikae\jmd-java\java-ee\alertaforense\target\classes;C:\Users\mikae\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\mikae\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.21.5\jackson-databind-2.21.5.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.21\jackson-annotations-2.21.jar;C:\Users\mikae\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.21.5\jackson-core-2.21.5.jar;C:\Users\mikae\.m2\repository\jakarta\servlet\jakarta.servlet-api\6.1.0\jakarta.servlet-api-6.1.0.jar;C:\Users\mikae\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\mikae"/>
     <property name="user.language" value="pt"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\mikae\AppData\Local\Temp\surefire8993646328318218848\surefirebooter17273125612639992934.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\mikae\AppData\Local\Temp\surefire17921286693849267854\surefirebooter4286525728676622889.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.11+10-LTS"/>
@@ -59,5 +59,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.alerta.AppTest" time="0.003"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.alerta.AppTest" time="0.002"/>
 </testsuite>
