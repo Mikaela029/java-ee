@@ -1,4 +1,4 @@
-package crude;
+package crude.com;
 
 public class Personagem {
 

@@ -1,3 +1,5 @@
-crude\com\App.class
-crude\com\App$Personagem.class
+crude\com\Personagem.class
 crude\com\RestApplication.class
+crude\com\Service.class
+crude\com\Controller.class
+crude\com\Repository.class

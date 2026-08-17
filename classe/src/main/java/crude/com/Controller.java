@@ -20,23 +20,17 @@ Criar um endpoint (“/personagem”) que permita fazer operações CRUD:
 */
 
 @Path("/personagem")
-public class App {
-
-        private static List<Personagem> lista = new ArrayList<>();
+public class Controller {
 
         @POST
         public void personagem(Personagem personagem) {
 
-                // construtores
-                // Personagem novoPersonagem = new Personagem("Maria", "Humana :)",
-                // "Quesadilla");
-
-                lista.add(personagem);
+                Service.personagem(personagem);
         }
 
         @GET
         public List<Personagem> getAll() {
-                return lista;
+                return Service.getAll();
         }
 
 
