@@ -1,11 +1,15 @@
 package crude.com;
 
-import java.util.ArrayList;
 import java.util.List;
 
+import jakarta.inject.Inject;
+import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
+import jakarta.ws.rs.PATCH;
 import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
+import jakarta.ws.rs.core.Response;
 
 /*CRUD
 Criar uma classe chamada Personagem. Esta classe deve ter os seguintes campos (com getters, setters e construtores):
@@ -22,17 +26,43 @@ Criar um endpoint (“/personagem”) que permita fazer operações CRUD:
 @Path("/personagem")
 public class Controller {
 
+@Inject
+private Service service; 
+
         @POST
         public void personagem(Personagem personagem) {
 
-                Service.personagem(personagem);
+                service.personagem(personagem); 
         }
 
         @GET
-        public List<Personagem> getAll() {
-                return Service.getAll();
+        public Response getAll() {
+                
+                Response.ResponseBuilder responseBuilder = Response.ok();
+                
+                Response resposta = responseBuilder.entity().build();
+                return resposta;
+
         }
 
 
+        @DELETE
+        public void deletePersonagem(int id) {
+              service.deletePersonagem(id);
+                
+        }
 
+        @PUT  //substitiu tudo
+        public void putPersonagem() {
+                
+
+        }
+        
+
+
+        @PATCH { //substitui alguns atributos
+        
+
+        }
+        
 }
